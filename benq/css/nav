@@ -1,0 +1,877 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800');
+@keyframes moveMobile{
+    0% {margin-top: 20px;}
+}
+@keyframes movePc{
+    0% {margin-top:30px;}
+}
+@keyframes moveTop{
+    30% {top:0; }
+    100% {top:-100%;}
+}
+@keyframes txtColor{
+    0% {}
+    50% {color: #fff;}
+}
+
+
+
+
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html{font-size:0.625rem; line-height:1.6; width:100%; height:100%;}
+body{font-family: 'Nanum Gothic', sans-serif;}
+a{text-decoration: none;}
+
+/* header */
+header{
+    position: fixed; top:0;
+    height: 40px; width: 100%;
+    background:rgba(0,0,0,.85);
+    
+}
+header:after{content: ""; display: block; clear: both;}
+
+
+/*h1 값 a 한테 주기 */
+h1 a{
+    text-indent: -99999px;
+    display: block;
+    margin: 0 auto;
+    width:60px; height: 40px;
+    background: url(../img/benq_logo1.png) center no-repeat;
+    background-size: contain;
+    
+}
+
+
+
+header .toggle{
+    position: absolute;
+    top:0;
+    float: left;
+    width:30px; height: 20px;
+    margin:10px 12px;
+    padding: 0;
+    border:none; background: none;
+}
+header .toggle span{
+	display:block; background:#9a8ec3; width:30px; height:4px; 
+	text-indent:-99999px;
+}
+header .toggle span:nth-child(2){
+    margin: 4px auto;
+}
+header .toggle:focus, header .toggle:hover{
+    cursor: pointer;
+}
+.search{
+    position: absolute;
+    top:7px;
+    float: right;
+    right:13px;
+    width:25px; height: 25px;
+    text-indent: -99999px;
+    background: url(../icon/search_icon_mobile.png) center no-repeat;
+    background-size: contain;
+}
+
+/* nav 배너페이징 위로올라오게 못함*/
+nav{
+    z-index: 10;
+    left: 0;
+    position:fixed;
+    top:40px; 
+    width:100%; 
+    height: 100%;
+    background: #4d247a;
+}
+nav h2{
+     text-indent:-99999px; font-size: 0; line-height:0
+}
+
+nav .depth1 li{
+    text-indent: 18px;
+    line-height: 40px;
+    border-top:1px solid #fff;
+    
+}
+nav .depth1 li:first-child{
+    border: none;
+}
+nav .depth2{
+    background:#9a8ec3;
+    display: none;
+}
+nav .depth2 li{
+    text-indent: 27px;
+    line-height: 40px;
+}
+
+nav img{
+    display: none;
+}
+nav a{
+    display: block;
+    color: #eee;
+    font-size: 1.5rem; font-weight: bold;
+}
+
+
+/* searchbox */
+.searchbox{
+    display: none;
+    position: fixed;
+    width:100%;
+    height: 100%;
+    background: rgba(77,36,122,.6);
+}
+.searchbox:after{content: ""; display: block; clear: both;}
+.searchbox span{
+    display: block;
+    margin: 10px auto;
+    width:290px; 
+    height: 35px;
+    border:1px solid #eee;
+    border-radius: 5px;
+    background: #eee;
+}
+.searchbox span input{
+    width:250px; height: 33px;
+    background: none;
+    border:none;
+    font-size: 1.5rem;
+    text-indent: 10px;
+}
+.searchbox span button{
+    width:20px; height: 20px;
+    margin:5px;
+    background: url(../icon/search_icon_mobile.png)center no-repeat;
+    background-size: contain;
+    border: none;
+    text-indent: -99999px;
+    
+}
+.searchbox span button:focus, .searchbox span button:hover{
+    cursor: pointer;
+}
+/* opening */
+.opening{
+    top:0;
+    z-index: 15;
+    position:fixed;
+    width:100%; height: 100%;
+    background:#4d247a;
+    animation:moveTop 3s;
+    animation-fill-mode: both;
+}
+.opening p{
+    text-align: center;
+    font-size: 4rem;
+    color: #9a8ec3;
+    font-weight: 800;
+    animation:txtColor 1s;
+}
+
+/* main */
+#main{
+    width:100%; height: 2750px;
+}
+#main ul{
+    position: fixed;
+    right: 15px;
+    bottom:53px;
+    
+}
+#main ul li{
+   
+}
+
+/* 수정해야됨! */
+#main ul li a{
+    display: block;
+    text-indent: -99999px;
+     margin-top:6px;
+    width:10px; height: 10px;
+    background: url(../icon/page_icon.png) center no-repeat;
+    background-size: contain;
+    
+}
+#main ul li a:focus, #main ul li a:hover{
+    cursor: pointer;
+    background-image: url(../icon/page_on_icon.png);
+}
+
+.on{background-image: url(../icon/page_on_icon.png);}
+
+
+
+section .bg{
+    display: block;
+    height:100%; height: 350px;
+    background: url(../img/main_tablit_bg1.jpg) center no-repeat;
+    background-size:cover;
+}
+section:nth-of-type(2) .bg{background-image: url(../img/main_tablit_bg2.jpg)}
+section:nth-of-type(3) .bg{background-image: url(../img/main_tablit_bg3.jpg)}
+section:nth-of-type(4) .bg{background-image: url(../img/main_tablit_bg4.jpg)}
+section:nth-of-type(5) .bg{background-image: url(../img/main_tablit_bg5.jpg)}
+section {
+}
+section div{
+    background: #000;
+    height: 200px;
+    
+}
+section:nth-of-type(2) div{ background-color:#6b93c0; }
+section:nth-of-type(4) div{ background-color:#c6b087; }
+section:nth-of-type(5) div{ background-color:#e39967; }
+
+section div:after{content: ""; display: block; clear: both;}
+section div .txt{
+    margin-top:47px;
+    float: left;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    width:100%;
+}
+
+section div .txt span{
+    display: block;
+    font-size: 1.6rem;
+}
+section div .txt h3{
+    font-size: 3.5rem;
+}
+
+
+section div .nextbtn{
+    
+    float: left;
+    display: block;
+    width:100%;
+    text-align: center;
+    margin: 32px 0;
+    height: 20px;
+    animation:moveMobile 1s;
+    animation-iteration-count: infinite;
+    text-indent: -99999px;
+    background: url(../icon/pagedown_icon.png)center no-repeat;
+    background-position: center;
+    background-size:contain;
+}
+
+/* footer */
+
+footer{
+    height: 25px;width:100%;
+    position: fixed;
+    bottom: 0;
+    background: #000;
+    color: #fff;
+}
+footer:after{content: ""; display: block; clear: both;}
+footerLeft{
+    float:left;
+}
+footer div{
+    float:left;
+    line-height: 25px;
+    margin-left: 13px;
+}
+
+footer div a{
+    color: #fff;
+}
+footer div span{
+    margin-left: 13px;
+}
+
+footer ul{
+    display: none;
+}
+
+#footerRight{
+    float: right;
+    margin-right:  13px;
+}
+#icon a{
+    margin-left: 12px;
+    display: inline-block;
+    height: 13px;
+}
+#icon a:nth-child(1){
+    height: 11.5px;
+}
+#icon a:nth-child(3){
+    height: 11px;
+}
+#icon a img{
+    height: 100%;
+}
+
+/* gte 768 */
+@media screen and (min-width:768px){
+    /* header */
+    header{
+        height: 70px;
+    }
+    
+    h1 a{
+        width:105px; height: 70px;
+    }
+    header .toggle{
+        width:45px; height: 30px;
+        margin: 19px 42px;
+    }
+    header .toggle span{
+        width:45px; height: 5px;
+    }
+    header .toggle span:nth-child(2){
+        margin: 8px auto;
+    }
+    .search{
+        width:40px; height: 40px;
+        top:15px;
+        right: 42px;
+    }
+    
+    /* nav */
+    nav{
+        left:-100%;
+        top:70px;
+    }
+    nav .depth1 li{ line-height: 70px; }
+    nav a{ font-size: 2.6rem;}
+    
+    /* searchbox */
+    .searchbox{
+        display: none;
+        
+    }
+    .searchbox span{
+        margin: 66px auto;
+    width:700px; height: 60px;
+    }
+    .searchbox span input{
+        font-size: 2.6rem;
+        width:630px; height: 58px;
+    }
+    .searchbox span button{
+        line-height: 40px;
+        width:32px; height: 32px;
+        margin-left: 12px;
+    }
+    /* opening */
+    .opening p{
+        font-size: 10rem;
+    }
+    
+    
+    /* main */
+    #main{height: 5120px;}
+    #main ul{
+        right: 36px; bottom: 100px;
+    }
+    
+    section .bg{
+        height:794px;
+    }
+    section div{
+        height: 230px;
+    }
+    section div .txt{
+        margin-top:24px;
+        font-weight: 800;
+    }
+    section div .txt span{
+        font-size: 3rem;
+    }
+    section div .txt h3{
+        font-size: 6rem;
+    }
+    section div .nextbtn{
+        height: 23px;
+        margin: 42px 0;
+        
+        
+    }
+    
+    /* footer */
+    footer{
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    footer div{
+        line-height: 40px;
+        margin-left: 34px;
+    }
+    footer ul{
+        float: left;
+        display: block;
+        text-indent: 5px;
+        width:84px; height: 30px;
+        background: url(../icon/language.png) no-repeat;
+        background-position: bottom;
+        
+    }
+    /*
+    footer ul li{
+        position: absolute;
+        
+    }
+    
+    footer ul li:first-child{
+        top:-16px;
+    }*/
+    footer ul:focus, footer ul:hover{
+        cursor: pointer;
+    }
+    #footerRight{
+    }
+    #icon a{
+        margin-top: 4px;
+        margin-left: 24px;
+        height: 17px;
+    }
+    #icon a:nth-child(1){
+    height: 16px;
+}
+    #icon a:nth-child(3){
+        height: 15px;
+    }
+}
+
+/* gte 1024 */
+@media screen and (min-width:1024px){
+    header{
+        z-index: 10;
+    }
+    h1 a{
+        z-index: 11;
+        position: fixed;
+        margin-left: 4.882%;
+    }
+    header .toggle{
+        display: none;
+    }
+    .search{
+        z-index: 11;
+        position: fixed;
+        width:100px; height: 24px;
+        right:4.882%;
+        top:23px;
+        text-indent: 2px;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #9a8ec3;
+        background-image: url(../icon/search_line.png);
+    }
+    nav{
+        height: 100%;
+        margin-left: 4.882%;
+        left: 0;
+        position: absolute;
+        top:0;
+        float:left;
+        display:block;
+        background: none;
+        
+    }
+    nav .depth1{
+        margin-left: 130px;
+    }
+    nav .depth1 li{
+        text-indent: 0;
+        margin-right: 55px;
+        float: left;
+        line-height: 70px;
+        border-top: none;
+    }
+    nav a{
+        font-size: 1.6rem;
+        color: #9a8ec3;
+        
+        font-weight: 700;
+    }
+    
+    
+    /* depth2 */
+    nav .depth2{
+        float: left;
+        position:fixed;
+        background: #eee;
+        width:90.234%; height: 153px;
+        margin:0;
+        top:70px;
+        left:4.882%;
+        border-top:8px solid #4d247a;
+        
+    }
+    nav .depth2 li{
+        margin-right: 3.896%;
+    }
+     nav .depth2 li:first-child{
+        margin-left:3.896%;
+    }
+    nav .depth1 li:nth-child(3) ul li:first-child{
+        margin-right: 2.2%;
+    }
+    nav .depth2 a{
+        margin-top:18px;
+        width:100%;
+        text-indent: 0;
+        line-height: 1;
+        float:left;
+        color: #4d247a;
+        font-weight: bold;
+    }
+    
+    nav .depth2 img{
+        display: block;
+        width:139px;
+        margin-top:10px;
+    }
+    
+    /* searchbox */
+    .searchbox{
+        z-index: 11;
+        display:none;
+        width:100%; height:70px; 
+        background: none;
+        margin-left: 4.882%;
+    }
+    .searchbox span{
+        margin:17px 130px;
+        border-radius:0;
+        width: 73.242%; height: 40px;
+        background: #4d247a;
+        border:none;
+    }
+    .searchbox span input{
+        background: #fff;
+        margin: 5px;
+        top:0; padding:0;
+        float: left;
+        font-size: 1.6rem;
+        width: 93%; height: 30px;
+        
+    }
+    .searchbox span button{
+        float: left;
+        margin:0;padding: 0;
+        width:5.333%; height: 40px;
+        line-height: 0;
+        background-image: url(../img/searchbtn_pc.jpg);
+    }
+    
+    /* .search 이미지를 close로 바꿔야함 */
+    
+    
+    /* opening */
+    .opening p{
+        
+    }
+    
+    
+    
+    /* main */
+    #main{
+        height: 2750px;
+    }
+    #main ul{
+        top:44.921%;
+        right: 5.273%;
+    }
+    #main ul li{
+        width: 11px; height: 11px;
+        margin-top:7px;
+    }
+    section{
+        width: 100%;
+    }
+    section .bg{
+        
+        height: 768px;
+        background-image: url(../img/main_pc_bg1.jpg);
+    }
+    section:nth-of-type(2) .bg{background-image: url(../img/main_pc_bg2.jpg);}
+    section:nth-of-type(3) .bg{background-image: url(../img/main_pc_bg3.jpg);}
+    section:nth-of-type(4) .bg{background-image: url(../img/main_pc_bg4.jpg);}
+    section:nth-of-type(5) .bg{background-image: url(../img/main_pc_bg5.jpg);}
+    
+    section:nth-of-type(2) div .txt h3{
+        width:200px;
+    }
+    section:nth-of-type(4) div .txt h3{
+        width:120px; float: right;
+    }
+    section:nth-of-type(5) div .txt h3{
+        width:261px; float: right;
+    }
+    
+    
+    
+    
+    section div{
+        background: none;
+        position: relative;
+        float: left;
+        top:-210px;
+        width:100%;
+    }
+    section:nth-of-type(2) div,section:nth-of-type(4) div,section:nth-of-type(5) div{
+        background: none;
+    }
+    
+    section:nth-of-type(1) div .txt{width:100%; margin: 0 auto; top:-210px;}
+    section:nth-of-type(2) div .txt{position: relative; width:370px; left: 11.328%; top:-272px;}
+    section:nth-of-type(3) div .txt{position: relative; width:100%; top:-408px;}
+    section:nth-of-type(4) div .txt{position: relative; width:400px; left: 53.417%; top:-288px;}
+    section:nth-of-type(5) div .txt{position: relative; width:335px; left: 55.175%; top:-22px;}
+    section div .txt{
+        margin: 0;
+    }
+    section div .nextbtn{
+        height: 21px;
+        margin: 50px 0;
+        animation:clear;
+        animation:movePc 1s;
+        animation-iteration-count: infinite;
+        
+    }
+    /* footer */
+    footer{
+        height: 30px;
+    }
+    footer div{
+        line-height: 30px;
+        margin-left: 0;
+    }
+    footer #footerLeft{
+        margin-left: 50px;
+    }
+    footer ul{
+        line-height: 27px;
+        height: 23px;
+        margin-right: 52px;
+    }
+    #icon a{
+        margin-top: 2px;
+        margin-left: 24px;
+        height: 14px;
+        
+    }
+    #footerRight{
+        margin-left: 0;
+        margin-right: 50px;
+    }
+    #icon a:nth-child(1){
+        height: 14px;
+        margin-left: 0;
+    }
+    #icon a:nth-child(3){
+        height: 14px;
+    }
+}
+/* gte 1280 */
+@media screen and (min-width:1280px){
+    
+    /* header */
+    header{
+        height: 95px;
+    }
+    h1 a{
+        width: 109px; height: 73px;
+        margin-top:10px;
+        margin-left: 20.3125%;
+    }
+    .search{
+        top:38px;
+        right:20.3125%;
+    }
+    nav{
+        margin-left: 20.3125%;
+    }
+    nav .depth1{
+        margin-left: 150px;
+    }
+    nav .depth1 li{
+        line-height: 95px;
+    }
+    
+    
+    /* depth2 */
+    
+    nav .depth2{
+        display: block;
+        width:59.375%; height: 175px;
+        margin:0;
+        top:95px;
+        left:20.3125%;
+        border-top:10px solid #4d247a;
+    }
+    nav .depth2 li{
+        margin-right: 3.771%;
+    }
+     nav .depth2 li:first-child{
+        margin-left:5%;
+    }
+    nav .depth2 li{
+        width:14.912%;
+        height: 100%;
+    }
+    nav .depth2 a{
+        margin-top:24px;
+    }
+    nav .depth2 img{
+        width:100%;
+        margin-top:13px;
+    }
+    
+    /* searchbox */
+    .searchbox{
+        
+        display:none;
+        height:95px; 
+        margin-left: 20.3125%;
+    }
+    .searchbox span{
+        width: 45.312%; height: 55px;
+    }
+    .searchbox span input{
+        width:91%; height: 45px;
+    }
+    .searchbox span button{
+        width:6.321%; height: 55px;
+    }
+    
+    /* opening */
+    .opening p{
+       
+    }
+    
+    
+    /* main */
+    #main{
+        height: 4745px;
+    }
+    #main ul{
+        top:44.421%;
+        right: 19.166%;
+    }
+    section .bg{
+        
+        height: 950px;
+    }
+    section div{
+        top:-252px;
+    }
+    
+    section div .txt span{
+        font-size: 3.6rem;
+    }
+    section div .txt h3{
+        font-size: 7.2rem;
+    }
+    
+    section:nth-of-type(1) div .txt{width:100%; margin: 0 auto; top:-252px;}
+    section:nth-of-type(2) div .txt{position: relative; width:445px; left: 23.593%; top:-345px;}
+    section:nth-of-type(3) div .txt{position: relative; width:100%; top:-559px;}
+    section:nth-of-type(4) div .txt{position: relative; width:480px; left: 54.895%; top:-498px;}
+    section:nth-of-type(5) div .txt{position: relative; width:402px; left: 58.229%; top:-78px;}
+    
+    
+    
+    section:nth-of-type(2) div .txt h3{
+        width:200px;
+    }
+    section:nth-of-type(4) div .txt h3{
+        width:135px; float: right;
+    }
+    section:nth-of-type(5) div .txt h3{
+        width:315px; float: right;
+    }
+    
+    /* footer */
+    footer{
+        height: 36px;
+    }
+    footer div{
+        line-height: 36px;
+    }
+    
+    footer #footerLeft{
+        margin-left: 24.062%;
+    }
+    footer ul{
+        line-height: 30px;
+        height: 25px;
+        margin-right: 52px;
+    }
+    #footerRight{
+        margin-left: 0;
+        margin-right: 24.062%;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

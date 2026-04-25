@@ -1,0 +1,247 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800');
+
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html{font-size:0.625rem; line-height:1.6;}
+body{font-family: 'Nanum Gothic', sans-serif;}
+a{text-decoration: none;}
+
+/* header */
+header{
+    position: fixed; width:100%; top:0;
+    height: 95px; background:rgba(0,0,0,.85);
+    
+}
+.headerInner{
+    width:1140px;
+    margin: 0 auto;
+	
+}
+.headerInner:after{
+	content:""; display:block; clear:both;
+}
+h1{
+    float: left;
+    padding-top: 20px;
+    margin-left:0;
+    width:110px; height: 73px;
+    text-indent: -99999px;
+    background:url(../img/benq_logo1.png) center no-repeat;
+    background-size: contain;
+    margin-right: 42px;
+    
+}
+h1:hover, h1:focus{cursor: pointer;}
+button{
+    display: none;
+}
+
+/* search */
+.headerInner div{
+    display: none;;
+    float:left;
+    padding-top:20px;
+}
+.headerInner div span{float: left;}
+.headerInner div span:first-child{
+    display: block;
+    width:840px; height:45px;
+    background: #fff;
+    border:5px solid;
+    border-color: #4d247a;
+    line-height: 45px;
+    text-indent: 10px;
+    font-size: 1.6rem;
+}
+.headerInner div span input{
+    width:840px; height:45px;float:left;
+    border:none;
+}
+.headerInner div button{
+    border: none;
+    display: block;
+    float: left;
+    width:55px; height:55px;
+    background: url(../img/searchbtn_pc.jpg) center no-repeat;
+    background-size: cover;
+    text-indent: -99999px;
+}
+.headerInner div button:hover, .headerInner div button:focus{
+    cursor: pointer;
+}
+.headerInner div span:last-child{
+    margin-left: 29px;
+    margin-top: 14px;
+    width:28px; height: 28px;
+    background: url(../icon/close.png) center no-repeat;
+    background-size: cover;
+    text-indent: -99999px;
+}
+.headerInner div span:last-child:hover, .headerInner div span:last-child:focus{
+    cursor: pointer;
+}
+/* nav */
+nav{
+   float:left;
+}
+
+nav h2{position:absolute; text-indent:-99999px; font-size: 0; line-height:0}
+nav li{
+    float: left;
+}
+nav a{
+    float: left;
+    padding-right: 52px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color:#9a8ec3;
+    line-height: 95px;
+}
+/* depth2 */
+nav ul li ul{
+    float:left;
+    padding-left:57px;
+    width:1083px; height: 185px;
+    position: fixed;
+    top:94px;
+    left:
+    
+    border-top: 10px solid #4d247a;
+    background: #eee;
+}
+
+
+nav ul li ul a{
+    float: left;
+    margin-top: 25px;
+    padding:0;
+    margin-right:43px;
+    line-height: 1;
+    color: #4d247a;
+}
+
+nav ul li ul img{
+    padding:0; margin:0;
+    margin-top: 16px;
+}
+
+.headerInner .search{
+    float: right;
+    margin-right:10;
+    color:#9a8ec3;
+    display: block;
+    font-weight: 700;
+    line-height: 95px;
+    font-size: 1.6rem;
+    width:100px; 
+    text-indent: 3px;
+    background: url(../icon/search_line.png) center no-repeat;
+    background-size: contain;
+}
+
+main{
+    margin: 0; padding:0; top:0;
+    width:100%; height: 100%;
+}
+main div{
+    margin: 0; padding: 0;
+    height: 950px;
+    background: url(../img/main_pc_bg1.jpg) center no-repeat;
+    background-size: cover;
+    
+}
+main div:nth-of-type(2){
+    background-image: url(../img/main_pc_bg2.jpg);
+}
+main div:nth-of-type(3){
+    background-image: url(../img/main_pc_bg3.jpg);
+}
+main div:nth-of-type(4){
+    background-image: url(../img/main_pc_bg4.jpg);
+}
+main div:nth-of-type(5){
+    background-image: url(../img/main_pc_bg5.jpg);
+}
+
+
+footer{
+    
+}
+
+
+@media all and (max-width:1200px){
+    .headerInner{
+        width:100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

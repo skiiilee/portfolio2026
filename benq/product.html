@@ -1,0 +1,280 @@
+<!DOCTYPE Html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" >
+		<title>BenQ</title>
+		<link rel="stylesheet" href="/benq/css/normalize.css">
+        <link rel="stylesheet" href="/benq/css/jquery.bxslider.min.css">
+        <link rel="stylesheet" href="/benq/css/sub.css">
+        <script src="/benq/js/jquery-3.3.1.min.js"></script>
+        <script src="/benq/js/jquery.bxslider.min.js"></script>
+        <script src="/benq/js/jquery.mousewheel.min.js"></script>
+        <script src="/benq/js/sub.js"></script>
+	</head>	
+	<body id="product">
+        <header>  
+            <div class="headerInner">
+                   <h1><a href="/benq/">Benq</a></h1>
+                    <button type="button" class="toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="searchbox">
+                        <span>
+                            <input type="text" id="search" placeholder="입력">
+                            <button type="button">검색</button>
+                        </span>
+                        
+                    </div>
+                    
+                    <nav>
+                        <h2>Navigation</h2>
+                        <ul class="depth1">
+                            <li><a href="/benq/company.html" class="menu">회사소개</a>
+                                <ul class="depth2">
+                                    <li><a href="/benq/company.html"><p>회사소개</p><img src="/benq/img/c_company.jpg" alt="company"></a></li>
+                                    <li><a href="/benq/company.html"><p>브랜드</p><img src="/benq/img/c_brand.jpg" alt="brand"></a></li>
+                                    <li><a href="/benq/company.html"><p>BenQ 그룹</p><img src="/benq/img/c_group.jpg" alt="group"></a></li>
+                                    <li><a href="/benq/company.html"><p>글로벌 오피스</p><img src="/benq/img/c_global.jpg" alt="global"></a></li>
+                                    <li><a href="/benq/company.html"><p>사회 공헌</p><img src="/benq/img/c_contribution.jpg" alt="global"></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/benq/product.html" class="menu">제품</a>
+                                <ul class="depth2">
+                                    <li><a href="/benq/product.html"><p>모니터</p><img src="/benq/img/p_moniter.jpg" alt="moniter"></a></li>
+                                    <li><a href="/benq/product.html"><p>프로젝터</p><img src="/benq/img/p_projecter.jpg" alt="projecter"></a></li>
+                                    <li><a href="/benq/product.html"><p>게임기어</p><img src="/benq/img/p_gamegear.jpg" alt="gamegear"></a></li>
+                                    <li><a href="/benq/product.html"><p>스탠드</p><img src="/benq/img/p_light.jpg" alt="light"></a></li>
+                                    <li><a href="/benq/product.html"><p>스피커</p><img src="/benq/img/p_speaker.jpg" alt="speaker"></a></li>
+                                </ul>
+                            </li>
+                                
+                            <li><a href="/benq/support.html" class="menu">지원</a>
+                                <ul class="depth2">
+                                    <li><a href="/benq/support.html"><p>서비스 조회/변경/취소</p><img src="/benq/img/s_search.jpg" alt="search"></a></li>
+                                    <li><a href="/benq/support.html"><p>서비스 신청</p><img src="/benq/img/s_service.jpg" alt="service"></a></li>
+                                    <li><a href="/benq/support.html"><p>다운로드</p><img src="/benq/img/s_download.jpg" alt="download"></a></li>
+                                    <li><a href="/benq/support.html"><p>온라인 상담</p><img src="/benq/img/s_ask.jpg" alt="ask"></a></li>
+                                    <li><a href="/benq/support.html"><p>매장 찾기</p><img src="/benq/img/s_find.jpg" alt="find"></a></li>
+                                </ul>
+                            </li>
+                                
+                            <li><a href="/benq/community.html" class="menu">커뮤니티</a>
+                                <ul class="depth2">
+                                    <li><a href="/benq/community.html"><p>뉴스</p><img src="/benq/img/c_news.jpg" alt="news"></a></li>
+                                    <li><a href="/benq/community.html"><p>광고/방송</p><img src="/benq/img/c_onair.jpg" alt="onair"></a></li>
+                                    <li><a href="/benq/community.html"><p>이벤트</p><img src="/benq/img/c_event.jpg" alt="event"></a></li>
+                                    <li><a href="/benq/community.html"><p>블로그</p><img src="/benq/img/c_blog.jpg" alt="blog"></a></li>
+                                </ul>
+                            </li>     
+                        </ul>
+                    </nav>
+                    <button type="button" class="search"><span>검색</span><span></span>
+                        <span></span></button>
+                    
+                </div>
+        </header>
+        
+        <div id="main">
+            <main>
+               <ul class="slider">
+					<li><a href="#">홈&amp;오피스</a></li>
+					<li><a href="#">스타일리쉬</a></li>
+					<li><a href="#">디자이너</a></li>
+					<li><a href="#">디자이너</a></li>
+					<li><a href="#">비즈니스</a></li>
+				</ul>
+                <div id="find">
+                    <span class="btnWrap"><button type="button">상세검색<span></span></button></span>
+                    <div class="menubox">
+                        <ul class="select">
+                            <li><button type="button"><span>사용시나리오</span><span></span></button>
+                               <ul class="select2">
+                                    <li><input type="checkbox" name="use" id="gaming"><label for="gaming">게이밍</label></li>
+                                    <li><input type="checkbox" name="use" id="business"><label for="business">비즈니스</label></li>
+                                    <li><input type="checkbox" name="use" id="designer"><label for="designer">디자이너</label></li>
+                                    <li><input type="checkbox" name="use" id="stylish"><label for="stylish">스타일리시</label></li>
+                                    <li><input type="checkbox" name="use" id="homeNoffice"><label for="homeNoffice">홈&amp;오피스</label></li>   
+                                
+                               </ul>
+                            </li>
+                            <li><button type="button"><span>해상도</span><span></span></button>
+                                <ul class="select2">
+                                   <li><input type="checkbox" name="resolution" id="r1280x1024"><label for="r1280x1024">1280 x 1024</label></li>
+                                    <li><input type="checkbox" name="resolution" id="r1366x768"><label for="r1366x768">1366 x 768</label></li>
+                                    <li><input type="checkbox" name="resolution" id="r1440x900"><label for="r1440x900">1440 x 900</label></li>
+                                    <li><input type="checkbox" name="resolution" id="r1600x900"><label for="r1600x900">1600 x 900</label> </li>
+                                    <li><input type="checkbox" name="resolution" id="r3840x2160"><label for="r3840x2160">3840 x 2160</label></li>
+                                    <li><input type="checkbox" name="resolution" id="r2560x1440"><label for="r2560x1440">2560 x 1440</label></li>
+                                    <li><input type="checkbox" name="resolution" id="r1920x1080"><label for="r1920x1080">1920 x 1080</label></li>
+                                    <li><input type="checkbox" name="resolution" id="r1920x1200"><label for="r1920x1200">1920 x 1200</label></li> 
+                                    </ul>
+                            </li>
+                            <li><button type="button"><span>스크린 사이즈</span><span></span></button>
+                                <ul class="select2">
+                                    <li><input type="checkbox" name="size" id="s32"><label for="s32">32인치 이상</label></li>
+                                    <li><input type="checkbox" name="size" id="s27to31"><label for="s27to31">27 ~ 31인치</label></li>
+                                    <li><input type="checkbox" name="size" id="s23to26"><label for="s23to26">23 ~ 26인치</label></li>
+                                    <li><input type="checkbox" name="size" id="s22"><label for="s22">22인치 이하</label></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <span class="btnbox">
+                            <button type="button" class="cancel">취소</button>
+                            <button type="button" class="submit">확인</button>
+                        </span>
+                    </div>
+                    
+                </div>
+                <div id="content">
+                    <div class="selectBox">
+                        <span>정렬:</span>
+                        <select name="sort">
+                            <option value="new">최신순</option>
+                            <option value="best">인기순</option>
+                            <option value="name">이름순</option>
+                        </select>
+                    </div>
+                    
+                    
+                    <div class="item">
+                        <a href="#"><img src="/benq/img/product_content01.jpg" alt="BL2706HT">
+                        <h3>BL2706HT</h3></a>
+                        <span class="line"></span>
+                        <p>· Full HD 프리미엄 IPS 패널로 광시야각 지원<br>
+                        · 피벗, 엘리베이션, 틸트, 스위블 지원<br>
+                        · 슬림 베젤 디자인 </p>
+                        <button type="button">자세히보기</button>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="/benq/img/product_content02.jpg" alt="EW3270ZL">
+                            <h3>EW3270ZL</h3></a>
+                        <span class="line"></span>
+                        <p>· 32인치 LED WQHD(2560x1440) 해상도<br>
+                        · 로우블루라이트 플러스와 플리커프리<br>
+                        · B.I 테크놀러지 기술</p>
+                        <button type="button">자세히보기</button>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="/benq/img/product_content03.jpg" alt="BL2423PT">
+                            <h3>BL2423PT</h3></a>
+                        <span class="line"></span>
+                        <p>· 24인치형, 1920x1080 FHD<br>
+                        · 로우블루라이트와 플리커프리<br>
+                        · B.I 테크놀러지 기술</p>
+                        <button type="button">자세히보기</button>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="/benq/img/product_content04.jpg" alt="EX3501R">
+                            <h3>EX3501R</h3></a>
+                        <span class="line"></span>
+                        <p>· 35" WQHD(3440x1440), 1800R 곡률 커브드<br>
+                            · 영화와 드라마를 위한 HDR<br>
+                            · 차세대 케이블 USB 타입 C 지원</p>
+                        <button type="button">자세히보기</button>
+                    </div>
+                    <div class="item"> 
+                        <a href="#"><img src="/benq/img/product_content05.jpg" alt="EW277HDR">
+                            <h3>EW277HDR</h3></a>
+                        <span class="line"></span>
+                        <p>· 27인치형 1920x1080 FHD 해상도<br>
+                        · 400 밝기, HDR 영상 지원<br>
+                        · 더 강력해진 B.I.+ 테크놀러지 지원  </p>
+                        <button type="button">자세히보기</button>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="/benq/img/product_content06.jpg" alt="GL2580H">
+                            <h3>GL2580H</h3></a>
+                        <span class="line"></span>
+                        <p>· Full HD 디스플레이 1080p<br>
+                        · 2ms 빠른 응답속도<br>
+                        · 다중 모니터를 한 화면처럼 제로 베젤</p>
+                        <button type="button">자세히보기</button>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="/benq/img/product_content07.jpg" alt="GW2470HL">
+                            <h3>GW2470HL</h3></a>
+                        <span class="line"></span>
+                        <p>· 로우블루라이트 플러스 지원<br>
+                        · Full HD 1080p 디스플레이<br>
+                        · 슬림 베젤 디자인  </p>
+                        <button type="button">자세히보기</button>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="/benq/img/product_content08.jpg" alt="GW2480">
+                            <h3>GW2480</h3></a>
+                        <span class="line"></span>
+                        <p>· Full HD 1080p 디스플레이<br>
+                        · IPS 광시야각 / B.I. 테크놀러지 기술<br>
+                        · 다중 모니터를 한 화면처럼 제로 베젤</p>
+                        <button type="button">자세히보기</button>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="/benq/img/product_content09.jpg" alt="GW2780">
+                            <h3>GW2780</h3></a>
+                        <span class="line"></span>
+                        <p>· Full HD 1080p 디스플레이<br>
+                        · IPS 광시야각 / B.I. 테크놀러지 기술<br>
+                        · 다중 모니터를 한 화면처럼 제로 베젤</p>
+                        <button type="button">자세히보기</button>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="/benq/img/product_content10.jpg" alt="GW2760HL">
+                            <h3>GW2760HL</h3></a>
+                        <span class="line"></span>
+                        <p>· 로우블루라이트 플러스 지원<br>
+                        · Full HD 1080p 디스플레이<br>
+                        · 슬림 베젤 디자인  </p>
+                        <button type="button">자세히보기</button>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="/benq/img/product_content11.jpg" alt="EL2870U">
+                            <h3>EL2870U</h3></a>
+                        <span class="line"></span>
+                        <p>· 28인치형 UHD 해상도 LED 모니터<br>
+                        · 아이케어 B.I.+ 테크놀러지<br>
+                        · AMD FreeSync™ 지원</p>
+                        <button type="button">자세히보기</button>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="/benq/img/product_content12.jpg" alt="SW271">
+                            <h3>SW271</h3></a>
+                        <span class="line"></span>
+                        <p>· 100% sRGB, 99% Adobe RGB, 93% DCI-P3 지원<br>
+                        · 27인치 4K UHD(3840x2160) 해상도<br>
+                        · 눈으로 보는 듯한 생생한 색감 HDR 지원</p>
+                        <button type="button">자세히보기</button>
+                    </div>
+                    <span class="bottomNav">
+                        <a href="#"><span></span>위로</a>
+                        <button type="button">더보기<span></span></button>
+                    </span>
+                </div>
+                
+            </main>
+        </div>
+        <footer>
+            <div id="footerLeft">
+				<a href="#">연락하기</a>
+				<span class="copyright">@BenQ Corporation</span>
+			</div>
+			<div id="footerRight">
+				<ul id="language">
+					<li>한국어</li>
+					<li>영어</li>
+				</ul>
+				<div id="icon">
+					<a href="#"><img src="/benq/icon/youtube_icon.png" alt="youtube"></a>
+					<a href="#"><img src="/benq/icon/facebook_icon.png" alt="facebook"></a>
+					<a href="#"><img src="/benq/icon/blog_icon.png" alt="blog"></a>
+				</div>
+			</div>
+        
+        </footer>
+        
+        
+	</body>
+</html>

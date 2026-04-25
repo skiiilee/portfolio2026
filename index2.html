@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <link rel='shortcut icon'  href='/static/img/favicon.ico'>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="google-site-verification" content="TdDRUBdqo3KtkqnwhYDzbaiox_NkZ30s-08MBdRBMGM">
+        <meta name="naver-site-verification" content="d9eaabda7f8cb981f2a577e0f64099176388fdc0">
+        <meta name="robots" content="index,follow"> 
+        <meta name="googlebot" content="index, follow">
+        <meta name="author" content="sklee">
+        <meta name="description" content="웹 퍼블리셔 이슬기의 포트폴리오입니다.">
+        <meta name="keywords" content="웹디자인, 웹퍼블리셔, 웹, 퍼블리셔, 퍼블리싱, 웹퍼블리셔, 웹퍼블리싱, 프론트엔드, 포트폴리오, 웹포트폴리오">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="이슬기 웹 포트폴리오">
+        <meta property="og:description" content="웹 퍼블리셔 이슬기의 포트폴리오입니다.">
+        <meta property="og:image" content="/static/img/og-img.png">
+        <meta property="og:url" content="https://sklee.kr">
+        <title>
+            이슬기 | 웹 퍼블리셔 포트폴리오
+        </title>
+        
+
+        <!-- CSS Files -->
+        <link href="/static/css/bootstrap.min.css" rel="stylesheet" >
+        <link href="/static/css/fullpage.min.css" rel="stylesheet" >
+        <link href="/static/css/swiper.min.css" rel="stylesheet" >
+        <link href="/static/css/reset.css" rel="stylesheet" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Pacifico&display=swap" rel="stylesheet">
+
+        <link href="/static/css/style.css" rel="stylesheet" >
+        <style>
+            .section {display: flex; justify-content: center; align-items: center;}
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-light fixed-top">
+                <div class="container-fluid">
+                    <h1 class="header__logo"><a class="navbar-brand" href="#intro" data-menuanchor="intro">슬기로운</a></h1>
+                    
+                    <h2 class="no-visible">메인 메뉴</h2>
+                    <ul class=" d-flex menu" id="topMenu">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#about" data-menuanchor="about">소개</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#works" data-menuanchor="works">작업물</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="#contact" data-menuanchor="contact">연락하기</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main id="main">
+            <section class="section intro fp-auto-height-responsive" id="top">
+                <div class="container">
+                    <h2 class="top-text">Portfolio</h2>
+                    <p>안녕하세요 5년차 웹 퍼블리셔 이슬기입니다. 반갑습니다 👋</p>
+                </div>
+            </section>
+            <section class="section about fp-auto-height-responsive" id="about">
+                <div class="container">
+                    <h2 class="s-title text-center">About</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="info">
+                                <p>이슬기 | Seulki Lee</p>
+                                <div>끊임없이 도전하는 웹 퍼블리셔 이슬기입니다. 디자인과 단순 코드 작업만 하던 웹 디자이너로 시작하여 html, css 뿐만 아니라 Javascript까지 다룰 수 있는 웹 퍼블리셔로 성장했습니다. 현재는 프론트엔드 개발자가 되기 위해 열심히 노력하고 있습니다.</div>
+                            </div>
+                            <div class="skill">
+                                <div class="title">업무 능력</div>
+                                <ul>
+                                    <li>
+                                        <img src="/static/img/skill1.png" alt="HTML">
+                                        <p><span id="count1"></span>%</p>
+                                    </li>
+                                    <li>
+                                        <img src="/static/img/skill2.png" alt="css">
+                                        <p><span id="count2"></span>%</p>
+                                    </li>
+                                    <li>
+                                        <img src="/static/img/skill8.png" alt="Sass">
+                                        <p><span id="count8"></span>%</p>
+                                    </li>
+                                    <li>
+                                        <img src="/static/img/skill3.png" alt="Javascript">
+                                        <p><span id="count3"></span>%</p>
+                                    </li>
+                                    <li>
+                                        <img src="/static/img/skill4.png" alt="jquery">
+                                        <p><span id="count4"></span>%</p>
+                                    </li>
+                                    
+                                    <li>
+                                        <img src="/static/img/skill5.png" alt="Photoshop">
+                                        <p><span id="count5"></span>%</p>
+                                    </li>
+                                    <li>
+                                        <img src="/static/img/skill6.png" alt="Illustrator">
+                                        <p><span id="count6"></span>%</p>
+                                    </li>
+                                    <li>
+                                        <img src="/static/img/skill7.png" alt="Xd">
+                                        <p><span id="count7"></span>%</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="profile">
+                                <div class="title">프로필</div>
+                                <ul>
+                                    <li><span>생년월일</span> 1994.04.01</li>
+                                    <li><span>전화번호</span> 010-2526-0401</li>
+                                    <li><span>이메일</span> seulkilee94@gmail.com</li>
+                                    <li><span>주소</span> 경기도 성남시 수정구</li>
+                                </ul>
+                            </div>
+                            <div class="experince">
+                                <div class="title">경력</div>
+                                <ul>
+                                    <li><span>2018.12-2022.10</span> 애니시큐어 <small>|</small> <span>홈페이지 유지보수 및 신규 서비스 개발</span></li>
+                                    <li><span>2018.04-2018.11</span> 쥬네드마르셀 <small>|</small>  <span>쇼핑몰 유지보수 및 상품 상세페이지 디자인</span></li>
+                                    <li><span>2016.09-2017.06</span> 티비엘디자인 <small>|</small>  <span>상품 상세페이지 디자인</span></li>
+                                </ul>
+                            </div>
+                            <div class="edu">
+                                <div class="title">학력</div>
+                                <ul>
+                                    <li><span>2017</span> 신구대학교 학사학위 전공심화 졸업</li>
+                                    <li><span>2016</span> 신구대학교 IT미디어과/웹IT 전공 졸업</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section works fp-auto-height-responsive" id="works" >
+                <div class="container">
+                    <h2 class="s-title text-center">Works</h2>
+                    <div class="swiper mySwiper work-slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" >
+                                <div>
+                                    <div class="thumb" style="background-image: url(/static/img/thumb1.png);">
+                                        <span class="ir-so">2023년 제작한 포트폴리오 화면 캡쳐</span>
+                                    </div>
+                                    <div class="hover">
+                                        <div class="wrap ">
+                                            <div class="title">2023 포트폴리오 제작</div>
+                                            <div class="overview"> 간단한 소개와 함께 작업물을 보여줄 수 있는 웹 포트폴리오를 제작했습니다. 부트스트랩과 fullPage.js, Swiper등 다양한 오픈소스 라이브러리를 연동하여 구현했습니다. 또한, 연락하기의 입력폼은 구글 스프레드 스크립트 편집기를 활용하여 메일 서버 없이도 메일 전송이 가능하도록 하였으며, 구글 캡챠를 연동하여 스팸 메일 전송이 불가하도록 했습니다. 
+                                            </div>
+                                            <div class="info">
+                                                <div class="date">기간 : 2023.01</div>
+                                                <div class="part">참여도 : 웹기획·디자인·퍼블리싱 100% 참여</div>
+                                                <div class="skill">사용기술 : HTML, CSS, JavaScript, Photoshop, Illustrator</div>
+                                            </div>
+                                            <a href="https://sklee.kr" target="_blank">사이트 바로가기</a>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" >
+                                <div>
+                                    <div class="thumb" style="background-image: url(/static/img/thumb2.png);">
+                                        <span class="ir-so">VR호스트 브랜드 메인페이지 캡쳐</span>
+                                    </div>
+                                    <div class="hover">
+                                        <div class="wrap">
+                                            <div class="title">VR호스트 브랜드 런칭 프로젝트</div>
+                                            <div class="overview">3D 카메라 판매, 촬영, 웹사이트 구현 서비스를 제공하는 신생 브랜드입니다. 팀 프로젝트로 진행되었으며 홈페이지 웹기획, 디자인, 퍼블리싱 작업과 스마트스토어 배너와 상품 상세페이지 제작 작업을 했습니다. 또한 제가 제작에 참여했던 웹빌더로 홈페이지 구현 후 별도 코드를 추가하는 방식으로 작업했습니다.</div>
+                                            <div class="info">
+                                                <div class="date">기간 : 2022.08 - 2022.10</div>
+                                                <div class="part">참여도 : 웹기획·디자인·퍼블리싱 100% 참여</div>
+                                                <div class="skill">사용기술 : 웹빌더, HTML, CSS, JavaScript, Photoshop, Illustrator</div>
+                                            </div>
+                                            <a href="https://vrhost.co.kr/" target="_blank">사이트 바로가기</a>  
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" >
+                                <div>
+                                    <div class="thumb" style="background-image: url(/static/img/thumb10.png);">
+                                        <span class="ir-so">이미지빌더 내부 편집기 화면 캡쳐</span>
+                                    </div>
+                                    <div class="hover">
+                                        <div class="wrap">
+                                            <div class="title">이미지빌더 런칭 프로젝트</div>
+                                            <div class="overview">포토샵 없이도 상품 상세페이지용 이미지를 제작할 수 있는 이미지 편집기 "이미지빌더" 제작 작업에 참여했습니다. 상세페이지 제작이 가능한 에디터, 제작물 또는 이미지 관리 기능을 제공하는 관리페이지, 이미지빌더 소개 및 매뉴얼을 제공하는 운영 사이트의 웹기획, 디자인, 퍼블리싱 작업을 진행했습니다. <br>이미지빌더는 로그인 후 패널 우측 상단의 '새로 만들기' 버튼을 눌러 에디터로 이동할 수 있습니다.<br><span>(ID : ahndo, PW : img1212!)</span></div>
+                                            <div class="info">
+                                                <div class="date">기간 : 2020.03 - 2020.06, 2020.12- 2021.02</div>
+                                                <div class="part">참여도 : 웹기획·디자인·퍼블리싱 100% 참여</div>
+                                                <div class="skill">사용기술 : HTML, CSS, JavaScript, Photoshop, Illustrator</div>
+                                            </div>
+                                            <div class="btn-group">
+                                                <a href="https://ahndo.dothome.co.kr/editor" target="_blank">이미지빌더 바로가기</a>
+                                                <a href="https://imagebuilder.dothome.co.kr/" target="_blank">운영사이트 바로가기</a>  
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" >
+                                <div>
+                                    <div class="thumb" style="background-image: url(/static/img/thumb4.png);">
+                                        <span class="ir-so">닷홈 결제 페이지 캡쳐</span>
+                                    </div>
+                                    <div class="hover">
+                                        <div class="wrap">
+                                            <div class="title">닷홈 결제 개선 프로젝트</div>
+                                            <div class="overview">닷홈의 결제페이지 UXUI 개선 작업에 참여했습니다. 결제 페이지 하단에서만 결제 금액이 확인 가능하여 다소 불편했던 부분을 결제 정보 입력 영역은 좌측에, 결제 금액 영역을 우측에 두어 상품 옵션을 변경하거나 부가 서비스를 추가할 때 가격을 바로 확인할 수 있도록 개선했습니다.</div>
+                                            <div class="info">
+                                                <div class="date">기간 : 2020.07 - 2020.09</div>
+                                                <div class="part">참여도 : 웹기획·디자인·퍼블리싱 100% 참여</div>
+                                                <div class="skill">사용기술 : HTML, CSS, JavaScript, Photoshop</div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" >
+                                <div>
+                                    <div class="thumb" style="background-image: url(/static/img/thumb9.png);">
+                                        <span class="ir-so">닷홈빌더 내부 편집기 화면 캡쳐</span>
+                                    </div>
+                                    <div class="hover">
+                                        <div class="wrap">
+                                            <div class="title">닷홈빌더 런칭 프로젝트</div>
+                                            <div class="overview">코딩 없이 홈페이지를 제작할 수 있는 웹빌더 "닷홈빌더" 제작 작업에 참여했습니다. 홈페이지 관리 기능을 제공하는 관리자 페이지와 페이지 제작이 가능한 에디터, 공지사항과 매뉴얼 등을 제공하는 운영 사이트의 웹기획, 디자인, 퍼블리싱 작업을 진행했습니다. 또한 런칭 후에도 닷홈빌더 유지보수와 운영사이트 컨텐츠 관리를 지속적으로 진행했습니다.
+                                                <br> 닷홈빌더는 로그인 후 메뉴의 관리( <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224 256c-70.7 0-128-57.3-128-128S153.3 0 224 0s128 57.3 128 128s-57.3 128-128 128zm-45.7 48h91.4c11.8 0 23.4 1.2 34.5 3.3c-2.1 18.5 7.4 35.6 21.8 44.8c-16.6 10.6-26.7 31.6-20 53.3c4 12.9 9.4 25.5 16.4 37.6s15.2 23.1 24.4 33c15.7 16.9 39.6 18.4 57.2 8.7v.9c0 9.2 2.7 18.5 7.9 26.3H29.7C13.3 512 0 498.7 0 482.3C0 383.8 79.8 304 178.3 304zM436 218.2c0-7 4.5-13.3 11.3-14.8c10.5-2.4 21.5-3.7 32.7-3.7s22.2 1.3 32.7 3.7c6.8 1.5 11.3 7.8 11.3 14.8v30.6c7.9 3.4 15.4 7.7 22.3 12.8l24.9-14.3c6.1-3.5 13.7-2.7 18.5 2.4c7.6 8.1 14.3 17.2 20.1 27.2s10.3 20.4 13.5 31c2.1 6.7-1.1 13.7-7.2 17.2l-25 14.4c.4 4 .7 8.1 .7 12.3s-.2 8.2-.7 12.3l25 14.4c6.1 3.5 9.2 10.5 7.2 17.2c-3.3 10.6-7.8 21-13.5 31s-12.5 19.1-20.1 27.2c-4.8 5.1-12.5 5.9-18.5 2.4l-24.9-14.3c-6.9 5.1-14.3 9.4-22.3 12.8l0 30.6c0 7-4.5 13.3-11.3 14.8c-10.5 2.4-21.5 3.7-32.7 3.7s-22.2-1.3-32.7-3.7c-6.8-1.5-11.3-7.8-11.3-14.8V454.8c-8-3.4-15.6-7.7-22.5-12.9l-24.7 14.3c-6.1 3.5-13.7 2.7-18.5-2.4c-7.6-8.1-14.3-17.2-20.1-27.2s-10.3-20.4-13.5-31c-2.1-6.7 1.1-13.7 7.2-17.2l24.8-14.3c-.4-4.1-.7-8.2-.7-12.4s.2-8.3 .7-12.4L343.8 325c-6.1-3.5-9.2-10.5-7.2-17.2c3.3-10.6 7.7-21 13.5-31s12.5-19.1 20.1-27.2c4.8-5.1 12.4-5.9 18.5-2.4l24.8 14.3c6.9-5.1 14.5-9.4 22.5-12.9V218.2zm92.1 133.5c0-26.5-21.5-48-48.1-48s-48.1 21.5-48.1 48s21.5 48 48.1 48s48.1-21.5 48.1-48z"/></svg>) 버튼을 눌러 관리자 페이지로 이동한 뒤 상단 메뉴의 디자인 버튼을 눌러 에디터로 이동할 수 있습니다. <span>(ID : ahn1, PW : test1234)</span></div>
+                                            <div class="info">
+                                                <div class="date">기간 : 2020.01 - 2020.02, 2020.08 - 2020.12</div>
+                                                <div class="part">참여도 : 웹기획·디자인·퍼블리싱 100% 참여</div>
+                                                <div class="skill">사용기술 : HTML, CSS, JavaScript, Photoshop, Illustrator</div>
+                                            </div>
+                                            <div class="btn-group">
+                                                <a href="http://ahn.dothome.co.kr/" target="_blank">닷홈빌더 바로가기</a>  
+                                                <a href="https://builder20.dothome.co.kr/" target="_blank">운영사이트 바로가기</a>  
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" >
+                                <div>
+                                    <div class="thumb" style="background-image: url(/static/img/thumb6.jpg);">
+                                        <span class="ir-so">닷홈빌더의 건축 템플릿 메인페이지 캡쳐</span>
+                                    </div>
+                                    <div class="hover">
+                                        <div class="wrap">
+                                            <div class="title">닷홈빌더 템플릿 제작</div>
+                                            <div class="overview">사용자에게 배포하는 닷홈빌더 홈페이지 템플릿을 제작했습니다. 웹기획과 디자인 작업 후 닷홈빌더를 사용하여 홈페이지를 구현했습니다. 사용자가 쉽게 수정하여 사용할 수 있도록 별도 코드를 추가하지 않고 닷홈빌더 제공 기능으로만 구현했습니다. (현재 닷홈에서 제공 중인 템플릿 중 렌트카를 제외한 모든 템플릿을 작업했습니다.)
+                                            </div>
+                                            <div class="info">
+                                                <div class="date">기간 : 2021.12 - 2022.09</div>
+                                                <div class="part">참여도 : 웹기획·디자인·웹빌더로 구현 100% 참여</div>
+                                                <div class="skill">사용기술 : 닷홈빌더, Photoshop, Illustrator</div>
+                                            </div>
+                                            <a href="https://www.dothome.co.kr/homepage/theme.php" target="_blank">템플릿 바로가기</a>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" >
+                                <div>
+                                    <div class="thumb" style="background-image: url(/static/img/thumb5.png);">
+                                        <span class="ir-so">상품 상세페이지 템플릿 예시 이미지</span>
+                                    </div>
+                                    <div class="hover">
+                                        <div class="wrap">
+                                            <div class="title">상품 상세페이지 템플릿 제작</div>
+                                            <div class="overview">
+                                                이미지와 텍스트만 변경하여 사용할 수 있도록 상품 상세페이지 포토샵 템플릿을 제작했습니다. 패션, 음식, 화장품 등 다양한 카테고리의 템플릿들을 제작했습니다. 또한 초보자도 쉽게 사용할 수 있도록 각 템플릿마다 맞춤 설명서를 함께 배포했습니다.
+                                            </div>
+                                            <div class="info">
+                                                <div class="date">기간 : 2019.01 - 2019.02</div>
+                                                <div class="part">참여도 : 기획·디자인 100% 참여</div>
+                                                <div class="skill">사용기술 : Photoshop</div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" >
+                                <div>
+                                    <div class="thumb" style="background-image: url(/static/img/thumb3.png);">
+                                        <span class="ir-so">2018년 제작한 포트폴리오 화면 캡쳐</span>
+                                    </div>
+                                    <div class="hover">
+                                        <div class="wrap">
+                                            <div class="title">2018 포트폴리오 제작</div>
+                                            <div class="overview"> 작업물을 보여줄 수 있는 웹 디자인 포트폴리오를 제작했습니다. 부트스트랩을 사용하여 반응형으로 구현하였으며, 썸네일을 클릭하면 전체 페이지 모달로 작업 내용을 볼 수 있게 했습니다. 
+                                            </div>
+                                            <div class="info">
+                                                <div class="date">기간 : 2018.04</div>
+                                                <div class="part">참여도 : 웹기획·디자인·퍼블리싱 100% 참여</div>
+                                                <div class="skill">사용기술 : HTML, CSS, JavaScript, Photoshop, Illustrator</div>
+                                            </div>
+                                            <a href="https://seulkilee.cafe24.com/" target="_blank">사이트 바로가기</a>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" >
+                                <div>
+                                    <div class="thumb" style="background-image: url(/static/img/thumb8.png);">
+                                    </div>
+                                    <div class="hover">
+                                        <div class="wrap">
+                                            <div class="title">BenQ 홈페이지 가상 리뉴얼</div>
+                                            <div class="overview">영상기기 업체 BenQ사의 홈페이지를 반응형으로 가상 리뉴얼했습니다. 웹사이트 제작 시 오픈소스를 전혀 사용하지 않고 미디어쿼리를 이용한 반응형 레이아웃과 원페이지 스크롤을 구현했습니다.
+                                            </div>
+                                            <div class="info">
+                                                <div class="date">기간 : 2018.04</div>
+                                                <div class="part">참여도 : 웹기획·디자인·퍼블리싱 100% 참여</div>
+                                                <div class="skill">사용기술 : HTML, CSS, JavaScript, Photoshop, Illustrator</div>
+                                            </div>
+                                            <a href="/benq/" target="_blank">사이트 바로가기</a>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" >
+                                <div>
+                                    <div class="thumb" style="background-image: url(/static/img/thumb6.png);">
+                                    </div>
+                                    <div class="hover">
+                                        <div class="wrap">
+                                            <div class="title">플래시게임 'FLASHLIGHT' 프로젝트</div>
+                                            <div class="overview"> 대학시절 졸업 작품 팀 프로젝트로 아두이노 빛센서 연동 플래시게임을 제작했습니다. 공포 게임으로 어두운 화면에 플래시라이트를 비춰  단서를 찾아내는 게임입니다. 모니터 주위에 아두이노 빛 센서를 붙여 빛을 비추면 해당 부분만 밝아지도록 구현했습니다. <br>(현재는 어도비 플래시플레이어 지원이 중단되어 게임 플레이가 불가합니다.)
+                                            </div>
+                                            <div class="info">
+                                                <div class="date">기간 : 2015</div>
+                                                <div class="part">참여도 : 액션스크립트 코딩 90% 참여</div>
+                                                <div class="skill">사용기술 : 액션스크립트 3.0</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" >
+                                <div>
+                                    <div class="thumb" style="background-image: url(/static/img/thumb7.png);">
+                                    </div>
+                                    <div class="hover">
+                                        <div class="wrap">
+                                            <div class="title">플래시게임 '4교시' 프로젝트</div>
+                                            <div class="overview">대학 재학 시절 창의 대회 팀 프로젝트로 마이크를 연동한 플래시 게임을 제작했습니다. 게임 주인공인 선생님이 떠드는 아이들에게 호통을 쳐 조용히 하게 하는 게임으로 데시벨이 높을수록 조용해지는 아이들이 많아집니다. 시간에 따라 게이지가 줄어들며, 떠드는 아이가 많을수록 게이지 속도가 빨라지도록 만들었습니다. <br>(현재는 어도비 플래시플레이어 지원이 중단되어 게임 플레이가 불가합니다.)
+                                            </div>
+                                            <div class="info">
+                                                <div class="date">기간 : 2014</div>
+                                                <div class="part">참여도 : 액션스크립트 코딩 100%, 디자인 90% 참여</div>
+                                                <div class="skill">사용기술 : 액션스크립트 3.0, Photoshop</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-caption">
+                            <div class="caption"></div>
+                        </div>
+                    </div>
+                </div>    
+                
+            </section>
+
+            <section class="section contact fp-auto-height-responsive"  id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-5 left">
+                            <h2 class="s-title ">Contact</h2>
+                            <div>제 포트폴리오를 읽어 주셔서 감사합니다. <br>문자나 메일 남겨주시면 빠르게 답변 드리도록 하겠습니다. 감사합니다. </div>
+                            <ul>
+                                <li><p>전화번호</p> 010-2526-0401</li>
+                                <li><p>이메일</p> seulkilee94@gmail.com</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-lg-7">
+                            <div class="wrap">
+                                <form class="gform" method="POST" data-email="seulkilee94@gmail.com" action="https://script.google.com/macros/s/AKfycby0Hp9ipNDkXOOq5ieESu8mgHb5Lg6zB2r4V8cmHhc_GnUBPw4WVxcF20NTOafM08HljQ/exec" onsubmit="check();">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">성함</label>
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="성함을 입력해 주세요." required > 
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">이메일</label>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="이메일을 입력해 주세요." required >
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="content" class="form-label">내용</label>
+                                        <textarea class="form-control" id="content" name="content" rows="6" placeholder="문의하실 내용을 입력해 주세요." required ></textarea>
+                                    </div>
+                                    <input type="hidden" id="g-recaptcha" name="g-recaptcha">
+                                    <div>
+                                        <button type="submit" class="btn btn-primary mb-3 m-button">보내기</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+      
+        <footer class="footer">
+            <div class="container-fluid">
+                 <div class="text-center">
+                     Copyright ⓒ 2023. sklee All rights reserved.
+                 </div>
+            </div>
+         </footer>
+
+
+        <!--    JS Files   -->
+        <script src="/static/js/jquery-3.6.3.min.js"></script>
+        <script src="/static/js/bootstrap.min.js"></script>
+        <script src="/static/js/swiper.min.js" ></script>
+        <script src="https://www.google.com/recaptcha/api.js?render=6LfIHtEjAAAAAP_CZ_umI3k7exH9vcJAMZcEPTzt"></script>
+        <script src="/static/js/form-submission-handler.js" ></script>
+        
+        <script>
+            $(document).ready(function() {
+                $('.grecaptcha-badge').hide();
+            });
+            //마우스휠 이벤트
+            var pageCount = $('#main section').length;
+            $('#main section, footer').on('mousewheel', function(event) {
+                event.preventDefault();
+                var currentPage = $(this).index();
+                //스크롤 올릴 때
+                if(event.originalEvent.wheelDelta > 0){
+                    if(currentPage > 0){
+                        var prev = $(this).prev().offset().top;
+                        $('html,body').stop().animate({scrollTop:prev},100);
+                        currentPage--;
+                    }
+                //스크롤 내릴 때
+                }else if(event.originalEvent.wheelDelta < 0){
+                    if(currentPage < pageCount-1){
+                        var next = $(this).next().offset().top;
+                        $('html,body').stop().animate({scrollTop:next},100);
+                        currentPage++;
+                        
+                    }
+                }
+                
+                if(currentPage == 0 ){
+                    //인트로일때는 메뉴에 활성화 표시 안함
+                    $('.menu .nav-item a').removeClass('active');
+                }
+                else{
+                    // 현재 보이는 화면의 메뉴에 활성화 표시
+                    $('.menu .nav-item a').removeClass('active');
+                    $('.menu .nav-item').eq(currentPage-1).find('a').addClass('active');
+
+                    //소개 영역이 보일때마다 업무 카운터 동작
+                    if(currentPage == 1){
+                        function counter(id, start, end, duration) {
+                        let obj = document.getElementById(id),
+                        current = start,
+                        range = end - start,
+                        increment = end > start ? 1 : -1,
+                        step = Math.abs(Math.floor(duration / range)),
+                        timer = setInterval(() => {
+                            current += increment;
+                            obj.textContent = current;
+                            if (current == end) {
+                            clearInterval(timer);
+                            }
+                        }, step);
+                        }
+                        counter("count1", 0, 95, 2000);
+                        counter("count2", 0, 95, 2000);
+                        counter("count3", 0, 60, 2000);
+                        counter("count4", 0, 80, 2000);
+                        counter("count5", 0, 90, 2000);
+                        counter("count6", 0, 85, 2000);
+                        counter("count7", 0, 80, 2000);
+                        counter("count8", 0, 60, 2000);
+                    }
+
+                    //연락하기 섹션이 보일 때만 구글캡챠 뱃지 표시
+                    if(currentPage == 3){ 
+                        $('.grecaptcha-badge').show();
+                    }else{
+                        $('.grecaptcha-badge').hide();
+                    }
+                }
+            });
+
+
+           
+            $(document).ready(function() {
+                var swiper = new Swiper(".work-slide", {
+                    effect: "cards",
+                    loop: true,
+                    grabCursor: true,
+                    loopFillGroupWithBlank: false,
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    on: {
+                        transitionStart: function () {
+                            var swiper = this;
+                            var caption= $('.swiper-slide-active').find('.wrap').html();
+                            $('.swiper-caption .caption').html('<div class="wrap">'+caption+'</div>');
+                        }
+                    }
+                });
+                
+
+            });
+            function check() {
+                var email = document.getElementById("email").value;
+                var name= document.getElementById("name").value;
+                var name= document.getElementById("content").value;
+                if (email != "") {
+                    var exptext = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/;
+                    if (exptext.test(email) == false) {
+                        //이메일 형식이 알파벳+숫자@알파벳+숫자.알파벳+숫자 형식이 아닐경우			
+                        alert("메일 주소를 다시 확인해 주세요.");
+                        document.formtag.email.focus();
+                        return false;
+                    }else{
+                        if(name !="" || name !="") {
+                            alert("메일을 보냈습니다.");
+                        }
+                    }
+                }
+                return true;
+            }
+            grecaptcha.ready(function() {
+                grecaptcha.execute('6LfIHtEjAAAAAP_CZ_umI3k7exH9vcJAMZcEPTzt', {action: 'homepage'}).then(function(token) {
+                    // 토큰을 받아다가 g-recaptcha 에다가 값을 넣어줍니다.
+                    document.getElementById('g-recaptcha').value = token;
+                });
+                $('.grecaptcha-badge').hide();
+            });
+        </script>
+    </body>
+
+    
+</html>
